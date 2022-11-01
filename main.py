@@ -1,10 +1,18 @@
+lst = []
+
+n = int(input("Enter number of elements : "))
+  
+# iterating till the range
+for i in range(0, n):
+    ele = int(input())
+  
+    lst.append(ele) # adding the element
+      
 
 
-numbers = [5, 20, 30, 30, 50]
-delval = int(input('Enter the deletion value: '))
+value = input("What value do you want to remove from the list?: ")
 
-# ******************************
-# Make your Code
-# ******************************
+if value in lst:
+   lst.remove(value)
 
-print (numbers)
+print(lst)
